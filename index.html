@@ -1,0 +1,80 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="ru"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Камера</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/demo.css" />
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+    <p class="browserupgrade">Версия вашего браузера <strong>не актуальна</strong>. Обновите браузер и повторите попытку.</p>
+    <![endif]-->
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="center-align">Камера</h1>
+
+                <!-- Layout video here -->
+                <div class="demo-area">
+                    <h3 class="view-text view-text--video">
+                        <span>Камера</span>
+                        <span id="videoViewText" class="view-text__instructions">Нажмите, что бы сделать снимок</span>
+                    </h3>
+                    <div class="view--video">
+                        <video id="videoTag" src="" autoplay muted class="view--video__video"></video>
+                    </div>
+                    <h3 class="view-text view-text--snapshot">
+                        <span>Просмотр снимка</span>
+                        <span id="photoViewText" class="view-text__instructions">Нажмите или нажмите ниже, чтобы сохранить как .jpg</span>
+                    </h3>
+                    <div class="view--snapshot">
+                        <canvas id="canvasTag" class="view--snapshot__canvas"></canvas>
+                        <a id="saveImg" class="hide" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Переключить камеру</h2>
+                    <div class="alert--error alert" class="hide" id="tooltip"></div>
+                    <p><button class="btn btn-default" type="button" disabled id="switch">Переключить камеру</button></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Наложить фильтры</h2>
+                    <p>Вы сможете наложить фильтры на просмотр в реальном времени и на снимок</p>
+                    <p><button class="btn btn-default" type="button" id="change-vid-filters">Изменить фильтр камеры</button></p>
+                    <p><button class="btn btn-default" type="button" id="change-img-filters">Изменить фильтр снимка</button></p>
+                </div>
+                <div class="col-md-4">
+                  
+                </div>
+            </div>
+            <hr>
+            <footer>
+                <p><a href="https://t.me/ithard">WhitePrime.</a> &copy; 2017 </p>
+            </footer>
+        </div> 
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/UserMedia.js"></script>
+    </body>
+</html>
+���
